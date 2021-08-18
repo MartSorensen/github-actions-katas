@@ -14,7 +14,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: Clone-down
         container: gradle:6-jdk11
-          steps:
+        steps:
           - run: ci/unit-test-app.sh
     Build:
         name: Build
