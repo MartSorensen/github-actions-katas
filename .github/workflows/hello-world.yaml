@@ -9,10 +9,10 @@ jobs:
     steps:
       - name: Clone-down
         uses: actions/checkout@v2
-    name: Test
+    Test:
         name: Test
         run: ci/unit-test-app.sh
-    name: Build
+    Build:
         name: Build
       - run: chmod +x ci/build-app.sh && ci/build-app.sh
       - name: Upload a Build Artifact
